@@ -21,7 +21,7 @@ class Jobs(SqlAlchemyBase):
     user = orm.relationship('User')
 
     def __repr__(self):
-        return f'<Colonist> {self.id} {self.surname} {self.name}'
+        return f'<Job> {self.job}'
 
     def set_password(self, password):
         self.hashed_password = generate_password_hash(password)
