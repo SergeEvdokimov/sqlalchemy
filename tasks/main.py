@@ -2,6 +2,7 @@ from flask import Flask
 
 from data.users import User
 from data.jobs import Jobs
+from data.departments import Department
 from data import db_session
 
 app = Flask(__name__)
@@ -55,12 +56,19 @@ def main():
     # job.collaborators = "1, 2"
     # job.is_finished = False
 
+    # dep = Department()
+    # dep.title = 'geological exploration'
+    # dep.email = '1@dep.ru'
+    # dep.chief = 1
+    # dep.members = '1, 2, 3, 4'
+
     # db_sess = db_session.create_session()
     # db_sess.add(user)
     # db_sess.add(user2)
     # db_sess.add(user3)
     # db_sess.add(user4)
     # db_sess.add(job)
+    # db_sess.add(dep)
     # db_sess.commit()
 
 
